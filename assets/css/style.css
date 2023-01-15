@@ -1,0 +1,528 @@
+
+/* Common Styles or Utilities  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 26px;
+    color: #727272;
+}
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.mobile-menu-div{
+    display: none;
+}
+/* Common Styles or Utilities End */
+
+/* Header Style Start  */
+header{
+    padding: 50px 0;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.logo{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+/* Main Menu  */
+.navbar,
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar li{
+    margin-left: 40px;
+}
+.navbar li a{
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #424242;
+}
+/* Banner Style */
+.banner{
+    padding-top: 102px;
+}
+.banner-contents{
+    text-align: center;
+}
+.banner-text{
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.banner-heading{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 75px;
+    color: #131313;   
+}
+.common-btn{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 0.5em;
+    padding: 1.25em 1.563em;
+}
+.banner-image img{
+    margin-top: 3.125em;
+}
+/* Header Style End  */
+
+/* Features Lists Style Start  */
+.feature-lists{
+    padding-top: 85px;
+    padding-bottom: 65px;
+}
+.feature-container{
+    display: flex;
+    column-gap: 73px;
+    align-items: center;
+    clear: both;
+}
+.features-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    width: 50%;
+    padding-left: 30px;
+}
+.features-details{
+    width: 50%;
+}
+.sec-title{
+    font-size: 2.813em;
+    font-weight: 700;
+    color: #131313;
+    line-height: 53px;
+}
+.light-dark-text{
+    font-weight: 500;
+    color: #727272;
+}
+.yellow-text{
+    color: #FF900E;
+}
+.sec-desc {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.features-details .common-btn{
+    margin-top: 5px;
+    display: inline-block;
+}
+/* Features Lists Style End */
+
+/*More Features Style Start */
+.more-features .features-images{
+    grid-template-columns: repeat(1, 1fr);
+}
+.more-features .sec-title{
+    padding-left: 15px;
+    border-left: 5px solid #FF900E;
+}
+.features-desc{
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.features-desc h3{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.features-desc a{
+    color: #727272;;
+}
+.more-features .features-images{
+    position: relative;
+}
+.experience-big-button {
+    position: absolute;
+    left: -60px;
+    bottom: -20px;
+    border-radius: 5px;
+}
+.experience-big-button{
+    text-align: center;
+}
+.experience-big-button h2{
+    font-size: 4.063em;
+    text-align: center;
+}
+/*More Features Style End */
+
+/*Some Facts Style Start */
+.fact-activities{
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.section-title {
+    width: 50%;
+    margin-bottom: 75px;
+}
+.facts{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fact{
+    padding: 45px 35px;
+    border: 1px solid #FF900E;
+    width: calc(76% / 4);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow ease-in-out 0.3s, transform ease-in-out 0.3s;
+}
+.fact:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.fact img{
+    width: 45px;
+    text-align: center;
+}
+.fact h3{
+    font-size: 2.813em;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fact p{
+    font-weight: 600;
+}
+/*Some Facts Style End */
+
+/* Sponsors Style Start  */
+.our-sponsors{
+    padding: 45px 5px 85px;
+}
+.our-sponsors .section-title{
+    text-align: center;
+    margin: 0 auto;
+}
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponsors-image{
+    width: 155px;
+    margin-top: 28px;
+}
+/* Sponsors Style End */
+
+/* Contact Us  */
+.contact-us{
+    padding: 40px 10px;
+    background: #f9f9f9;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact-us .sec-title{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.contact-form, 
+.get-in-touch {
+    flex: 1;
+}
+.get-in-touch .section-title,
+.contact-form .section-title{
+    font-size: 28px;
+    color: #131313;
+}
+.sub-title{
+    text-align: center;
+}
+.get-in-touch .content-title {
+    color: #131313;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.contact-form form textarea,
+.contact-form form input {
+    width: 90%;
+    padding: 15px 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.contact-form form textarea:focus,
+.contact-form form input:focus{
+    outline: 0;
+}
+.submit-btn{    
+	font-size: 12px;
+    font-weight: 600;
+    padding: 16px 40px;
+    color: #1A6C7A;
+    border: 2px solid #1A6C7A;
+    background: #fff;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+.submit-btn:hover{
+    color: #fff;
+    background-color: #1A6C7A;
+}
+
+
+
+/* Footer Start  */
+footer{
+    padding-bottom: 60px;
+}
+.footer-container{
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);    
+    border-radius: 5px;
+}
+.footer-text{
+    font-size: 1.125em;
+    color: #424242;
+    padding: 40px 5px;
+}
+/* Footer End */
+
+/*
+=================================
+Media Queries (Responsive Design)
+=================================
+ */
+/* Mobile Devices */
+@media only screen and (max-width:576px){
+    /* header */
+    header{
+        padding: 15px 0;
+    }
+    .logo{
+        font-size: 28px;
+    }
+    .navbar{
+        display: none;
+    }
+    .mobile-menu-div{
+        display: block;
+    }
+    .mobile-menu-div img{
+        width: 40px;
+        cursor: pointer;
+    }
+    .banner-heading {
+        font-size: 2.125em;
+        line-height: 45px;
+    }
+    .common-btn {
+        font-size: 1.00em;
+        padding: 0.8em 1.00em;
+    }
+
+    /* Feature List  */
+    .feature-container {
+        flex-direction: column;
+    }
+    .features-images {
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        padding-left: 0;
+    }
+    .features-details {
+        width: 100%;
+        text-align: center;
+    }
+    .sec-title{
+        font-size: 1.5em;
+        line-height: 30px;
+        margin-top: 15px;
+    }
+    .sec-desc {
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+    .experience-big-button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .experience-big-button h2 {
+        font-size: 3.063em;
+        line-height: 30px;
+    }
+    .experience-big-button br{
+        display: none;
+    }
+    /* More Feature  */
+    .fact-activities{
+        text-align: center;
+    }
+    .our-sponsors .section-title,
+    .fact-activities .section-title{
+        width: 100%;
+        margin-bottom: 45px;
+    }   
+    .features-desc {
+        padding: 30px 10px;
+    }
+    .features-desc h3 {
+        font-size: 1.125em;
+    }
+    /* Some Facts  */
+    .facts{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .fact{
+        width: 70%;
+    }
+    .fact h3 {
+        font-size: 2.125em;
+    }
+    /* Our Sponsors  */
+    .our-sponsors {
+        padding: 5px 5px 50px;
+    }
+    .our-sponsors .section-title{
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+    .sponsors {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .sponsors-image{
+        width: 120px;
+    }
+    /* Contact Us  */
+    .contact-us .sec-title {
+        margin-bottom: -15px;
+    }
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-form .section-title,
+    .get-in-touch .section-title{
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .contact-form form textarea,
+    .contact-form form input {
+        width: 100%;
+    }
+    /* Footer  */
+    footer {
+        padding-bottom: 15px;
+    }
+}
+
+/* 
+=================
+Tablet Devices
+=================
+*/
+
+@media only screen and (min-width:576px) and (max-width:992px){
+    /* Header  */
+    .logo {
+        font-size: 36px;
+    }
+    .navbar li {
+        margin-left: 25px;
+    }
+    .banner-heading {
+        font-size: 3em;
+        line-height: 60px;
+    }
+    .common-btn {
+        font-size: 1.125em;
+        border-radius: 0.250em;
+        padding: 0.850em 1.250em;
+    }
+    /* More Features  */
+    .feature-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .features-images,
+    .features-details {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .experience-big-button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sec-title {
+        font-size: 1.813em;
+        line-height: 40px;
+    }
+
+    /* Facts Activities  */
+    .fact-activities .section-title {
+        margin-bottom: 75px;
+        text-align: center;
+        width: 100%;
+    }
+    .facts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .fact {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* Sponsors  */
+    .our-sponsors .section-title{
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+    .sponsors {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .sponsors-image{
+        width: 130px;
+    }
+    /* Contact Form  */
+    .get-in-touch .section-title, .contact-form .section-title {
+        width: 100%;
+    }
+}
